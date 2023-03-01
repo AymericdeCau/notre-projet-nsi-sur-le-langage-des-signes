@@ -8,7 +8,7 @@ Toutes les pages ont un bandeau commun qui est stoké dans le fichier bandeau.js
 
 Enfin les pages sont reliées à des fichiers Javascript pour gérer toute les actions supplémentaires.
 
-connection.html >>> connection.js
+connexion.html >>> connexion.js
 
 Exercice_1.html >>> exercice_aléatoire.js
 
