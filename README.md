@@ -1,5 +1,3 @@
-
-
 Notre site contient 17 pages.
 
 Chaque page est reliée au fichier style.css qui gère la mise en page.
