@@ -1,0 +1,47 @@
+PS D:\le language des signes> git init
+				    -------	
+
+Reinitialized existing Git repository in D:/le language des signes/.git/
+PS D:\le language des signes> git add README.md
+				    -----------------
+
+PS D:\le language des signes> git commit -m "petite modification"
+				    -------------------------------
+		
+[main 9e9d172] petite modification
+ 1 file changed, 2 deletions(-)
+
+
+PS D:\le language des signes> git branch -M main
+				    -----------------
+
+
+PS D:\le language des signes> git remote add origin https://github.com/AymericdeCau/notre-projet-nsi-sur-le-language-des-signes.git
+				    --------------------------------------------------------------------------------------------
+
+error: remote origin already exists.
+
+PS D:\le language des signes> git push -u origin main
+				     --------------------
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/AymericdeCau/notre-projet-nsi-sur-le-language-des-signes.git
+   a523c8c..9e9d172  main -> main
+branch 'main' set up to track 'origin/main'.
+
+PS D:\le language des signes> 
+
+
+
+Autre commande de git :
+
+git status
+git log  # tape "q" to quit
+git fetch
+git rebase
