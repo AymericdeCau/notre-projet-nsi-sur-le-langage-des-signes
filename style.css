@@ -820,3 +820,9 @@ a#cRetour.cVisible{
   visibility: visible;
   opacity:1;
 }
+
+.boutton_retour
+{
+  margin: 10px;
+  width: 100px;
+}
