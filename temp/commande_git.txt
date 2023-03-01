@@ -45,3 +45,4 @@ git status
 git log  # tape "q" to quit
 git fetch
 git rebase
+git checkout main ou  9e9d172 ou master ou ...
