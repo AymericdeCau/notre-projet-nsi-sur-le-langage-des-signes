@@ -730,22 +730,53 @@ h3.h3_bonjour {
   margin-top: 20px;
   margin-left: 30%;
   margin-right: 30%;
-  height: 200px;
+  height: 250px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "user" "pass" "sign";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "num" "mon" "img" "val";
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.863);
   border-radius: 10px;
   padding: 20px 10px 0 10px ;
 }
 
 #numéro_carte {
+  grid-area: "num";
   border-radius: 5px;
   margin-bottom: 10px;
 }
 #montant {
+  grid-area: "mon";
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+#carte_banquaire {
+  grid-area: "img";
+  max-width: 200px;
+}
+#payons {
+  grid-area: "val";
+  border-radius: 5px;
+  border: 0;
+  margin: auto auto;
+  background-color: rgb(23, 194, 0);
+  color: rgb(255, 255, 255);
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#payons:hover {
+  background-color: rgb(16, 133, 1);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .payer {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 
