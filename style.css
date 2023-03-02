@@ -678,7 +678,6 @@ h4 {
   grid-area: sign;
   border-radius: 5px;
   border: 0;
-  margin: 10px;
   margin: auto auto;
   background-color: rgb(23, 194, 0);
   color: rgb(255, 255, 255);
@@ -821,8 +820,22 @@ a#cRetour.cVisible{
   opacity:1;
 }
 
-.boutton_retour
-{
-  margin: 10px;
+.boutton_retour {
+  display: block;
+  margin: auto auto;  /* Tu as plein de solution différente pour centrer mais en voilà une */
+
   width: 100px;
+
+/* des petits trucs sympa en plus */  
+  background-color: #1fe41f;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.boutton_retour:hover {
+  background-color: #49ff25;
+  cursor: pointer;
 }
