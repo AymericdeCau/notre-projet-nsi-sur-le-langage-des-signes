@@ -434,10 +434,10 @@ footer {
 .conteneur-choice {
   display: flex;
   justify-content: flex-end;
-  margin-top: 9px;
+  margin-top: 15px;
   width: 100%;
 }
-.choice {
+.choice {margin-top: 20px;
   text-decoration:none;
   background-color: rgb(23, 194, 0);
   color: rgb(255, 255, 255);
@@ -458,7 +458,8 @@ footer {
   cursor: pointer;
 }
 .defilement {
-  max-height: calc(-262px + 67vh);
+  /* max-height: calc(-262px + 67vh); */
+  max-height: 60%;
   padding-right: 24px;
   overflow-y: scroll;
 }
