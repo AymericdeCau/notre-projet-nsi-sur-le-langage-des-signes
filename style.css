@@ -824,22 +824,16 @@ a#cRetour.cVisible{
   display: block;
   margin: auto auto;  /* Tu as plein de solution différente pour centrer mais en voilà une */
 
-  width: 100px;
 
 /* des petits trucs sympa en plus */  
   background-color: #1fe41f;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 6px;
   margin-top: 50px;
   text-align: center;
   color: #ffffff;
-}
-
-.boutton_retour {
-  padding-top: 1px;
-  padding-left: 10px;
-  max-width: 970px;
-  height: 30px;
+  font-size: 1.2rem;
+  border: 2px solid #1fb900;
 }
 
 .boutton_retour:hover {
