@@ -826,17 +826,17 @@ a#cRetour.cVisible{
 
 
 /* des petits trucs sympa en plus */  
-  background-color: #1fe41f;
+  background-color: rgb(23, 194, 0);
   padding: 10px;
   border-radius: 6px;
   margin-top: 50px;
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
-  border: 2px solid #1fb900;
+  border: 0px;
 }
 
 .boutton_retour:hover {
-  background-color: #49ff25;
+  background-color: rgb(16, 133, 1);
   cursor: pointer;
 }
