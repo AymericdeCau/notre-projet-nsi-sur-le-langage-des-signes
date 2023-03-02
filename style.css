@@ -823,6 +823,22 @@ a#cRetour.cVisible{
 
 .boutton_retour
 {
-  margin: 10px;
-  width: 100px;
+	   padding-top: 1px;
+   padding-left: 10px;
+   max-width: 970px;
+   height: 30px;
+   background-color:#B3F4FE;
+}
+.boutton_retour
+{
+   /*align: right;*/
+   /*float:right;*/
+   /*
+    position: relative;
+    top: 1px;
+    left: 800px;
+   */
+    position:relative; 
+    display:inline-block; 
+    float:center;
 }
