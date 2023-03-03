@@ -19,14 +19,6 @@ const étoile5 = document.getElementById("star5");
 
 const bravo = document.getElementById("bravo_niv");
 
-
-var array = [["A","./asserts/A.png"],["B","./asserts/B.png"],["C","./asserts/C.png"],["D","./asserts/D.png"],["E","./asserts/E.png"],
-             ["F","./asserts/F.png"],["G","./asserts/G.png"],["H","./asserts/H.png"],["I","./asserts/I.png"],["J","./asserts/J.png"],
-             ["K","./asserts/K.png"],["L","./asserts/L.png"],["M","./asserts/M.png"],["N","./asserts/N.png"],["O","./asserts/O.png"],
-             ["P","./asserts/P.png"],["Q","./asserts/Q.png"],["R","./asserts/R.png"],["S","./asserts/S.png"],["T","./asserts/T.png"],
-             ["U","./asserts/U.png"],["V","./asserts/V.png"],["W","./asserts/W.png"],["X","./asserts/X.png"],["Y","./asserts/Y.png"],
-             ["Z","./asserts/Z.png"]];
-
 var begin = 1;
 var answer;
 var essaie = 0;
