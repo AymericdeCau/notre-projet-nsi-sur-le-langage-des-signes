@@ -31,9 +31,7 @@ function interrogation (array) {
   answer = 0;
 
   var rand = Math.floor(Math.random()*array.length);
-  console.log(rand)
   var bonneReponse = array[rand];
-  console.log(bonneReponse)
   array.splice(rand, 1);
 
   document.getElementById("la_question").textContent = "Quel est le signe pour " + bonneReponse[0] + " ?  ";
@@ -50,16 +48,23 @@ function interrogation (array) {
   array.push(mauvaiseReponse1);
 
   var rand = Math.floor(Math.random()*3);
-  console.log(rand)
   if (rand == 0) {var fList = [bonneReponse, mauvaiseReponse1, mauvaiseReponse2]};
   if (rand == 1) {var fList = [mauvaiseReponse1, bonneReponse, mauvaiseReponse2]};
   if (rand == 2) {var fList = [mauvaiseReponse1, mauvaiseReponse2, bonneReponse]};
 
   faux.textContent = "La solution était le signe n°" + (rand + 1) + " .";
-
-  im1.src = fList[0][1];
-  im2.src = fList[1][1];
-  im3.src = fList[2][1];
+  var a = fList[0][1].length-4;
+  var b = fList[0][1].length-4;
+  var c = fList[0][1].length-1;
+  im1.src = fList[0][1].substr(0,a) + "_ex" + fList[0][1].substr(b,c);
+  a = fList[1][1].length-4;
+  b = fList[1][1].length-4;
+  c = fList[1][1].length-1;
+  im2.src = fList[1][1].substr(0,a) + "_ex" + fList[1][1].substr(b,c);
+  a = fList[2][1].length-4;
+  b = fList[2][1].length-4;
+  c = fList[2][1].length-1;
+  im3.src = fList[2][1].substr(0,a) + "_ex" + fList[2][1].substr(b,c);
 
   b1.addEventListener("click", () => {
     if (correction == 0) {
@@ -113,7 +118,6 @@ function questionnaire (array) {
   if (begin == 1) {
     interrogation(array);
     begin = 0;
-    console.log(answer);
   }
   b_suivant.addEventListener("click", () => {
   if (answer == 1) {
