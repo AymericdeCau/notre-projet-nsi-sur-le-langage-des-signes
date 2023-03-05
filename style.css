@@ -854,10 +854,7 @@ a#cRetour.cVisible{
 
 .boutton_retour {
   display: block;
-  margin: auto auto;  /* Tu as plein de solution différente pour centrer mais en voilà une */
-
-
-/* des petits trucs sympa en plus */  
+  margin: auto auto;
   background-color: rgb(23, 194, 0);
   padding: 10px;
   border-radius: 6px;
@@ -866,6 +863,7 @@ a#cRetour.cVisible{
   color: #ffffff;
   font-size: 1.2rem;
   border: 0px;
+  width: 100px;
 }
 
 .boutton_retour:hover {
