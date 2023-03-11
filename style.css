@@ -1,7 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0 0;
   border: 0 0;
@@ -17,7 +16,6 @@ body {
   background-size: contain;
   background-position: 0px 70px;
 }
-
 .type2 {
   background-color: #ffffff;
 }
@@ -46,23 +44,19 @@ a {
   align-items: center;
   justify-content: space-around;
 }
-
 .bandeau:hover {
   height: 80px;
 }
-
 .logo {
   margin: auto 0;
   border-radius: 10%;
   height: 52px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.336);
 }
-
 .logo:hover {
   transition: 0.1s;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.591);
 }
-
 .bouton {
   display: flex;
   margin: 8px;
@@ -70,12 +64,10 @@ a {
   justify-content: center;
   color: #1fe41f;
 }
-
 .bouton:hover {
   color: #49ff25;
   text-decoration: underline 1px solid #49ff25;
 }
-
 #connexion a {
   margin: auto auto;
   background-color: rgb(23, 194, 0);
@@ -87,32 +79,26 @@ a {
   justify-content: center;
   border-radius: 4px;
 }
-
 #connexion a:hover {
   background-color: #43d81e;
 }
-
 #apprendre {
   display: none;
 }
-
 .ruban_déroule {
   visibility: hidden;
   position: absolute;
 }
-
 .liste_déroule {
   list-style-type: none;
-  padding: 10px 20px 0px 0px;
+  padding: 10px 20px 0px 0px ;
 }
-
 .liste_déroule li {
   max-width: 150px;
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: #00646c;
 }
-
 .menu_déroule {
   position: relative;
   margin: 0 10px 10px 10px;
@@ -120,7 +106,6 @@ a {
   color: #1fe41f;
   font-size: 20px;
 }
-
 .menu_déroule:hover {
   color: #49ff25;
   text-decoration: underline 1px solid #49ff25;
@@ -130,24 +115,19 @@ a {
   #accueil {
     display: none;
   }
-
   #apprendre {
     display: inline-block;
   }
-
   #cours {
     display: none;
   }
-
   #exercice {
     display: none;
   }
-
-  #apprendre:hover .ruban_déroule {
+  #apprendre:hover .ruban_déroule{
     visibility: visible;
   }
 }
-
 /* --------- Le corps du site ----------- */
 
 .simple {
@@ -166,11 +146,9 @@ a {
 #gauche {
   grid-area: "ac_1";
 }
-
 #milieu {
   grid-area: "ac_2";
 }
-
 #droite {
   grid-area: "ac_3";
 }
@@ -180,20 +158,17 @@ a {
   grid-template-columns: 50% 50%;
   padding: 0;
   list-style-type: none;
-  align-items: center;
+  align-items:center;
 }
-
 @media screen and (max-width:1400px) {
-  .exposition {
+  .exposition{
     margin-top: 35%;
   }
 }
-
 @media screen and (max-width:1100px) {
-  .exposition {
+  .exposition{
     margin-top: 40%;
   }
-
   .section2 {
     display: block;
   }
@@ -204,10 +179,8 @@ h1 {
   margin: auto;
   padding-top: 50px;
   width: 60%;
-  text-align: center;
-  line-height: 2.2rem;
+  text-align: center;line-height: 2.2rem;
 }
-
 #lettre_section {
   text-decoration-style: double;
   font-size: 1.8rem;
@@ -217,7 +190,6 @@ h1 {
   line-height: normal;
 
 }
-
 /* Les différents paragraphes */
 section {
   margin: 30px 10% 0px 10%;
@@ -225,19 +197,16 @@ section {
   border-radius: 15px;
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.863);
 }
-
 .animé {
   margin-left: 20%;
   margin-right: 20%;
 }
-
 .s2iacceuil {
   width: 90%;
   padding-top: 10px;
   justify-content: center;
   margin: auto auto;
 }
-
 .s4iacceuil {
   width: 70%;
 }
@@ -248,19 +217,18 @@ section {
 
 #s2pacceuil {
   margin-top: 0;
-  justify-self: normal;
+  justify-self:normal;
 }
 
 #accueil_video {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%; 
   height: 0;
 }
-
 #accueil_video iframe {
   position: absolute;
-  top: 0;
+  top:0;
   left: 0;
   width: 95%;
   height: 95%;
@@ -282,45 +250,38 @@ section {
   transition: 0.5s;
   max-width: 125px;
 }
-
 .sommaire:hover {
   opacity: 1 !important;
 }
-
 #flèche_sommaire {
   position: absolute;
   margin-top: 1px;
   margin-left: 7px;
 }
-
 #flèche_sommaire:hover {
   cursor: pointer;
 }
-
-.sommaire ul {
+.sommaire ul{
   margin: 0;
   padding: 0;
   display: none;
 
 }
-
-.sommaire li {
+.sommaire li{
   margin: 1px;
-  list-style: none;
+  list-style:none;
   padding: 2px;
   transition: 0.3s;
 }
-
-.sommaire li:hover {
+.sommaire li:hover{
   background-color: #aeaeae;
 }
-
 .sommaire a:hover {
   color: #ffffff;
 }
 
-.sommaire a {
-  color: #7d7d7d;
+.sommaire a{
+  color:#7d7d7d;
 }
 
 
@@ -335,16 +296,15 @@ footer {
   background-color: #333333;
   color: #ffffff;
 }
-
 .bas_de_page {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 30px;
   grid-template-areas:
-    "0 0 0 0"
-    "E1 A1 S1 L1"
-    "E2 A2 S2 L2"
-    "E3 A3 S3 CG";
+   "0 0 0 0"
+   "E1 A1 S1 L1"
+   "E2 A2 S2 L2"
+   "E3 A3 S3 CG";
 }
 
 .case_pied_de_page {
@@ -352,65 +312,52 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 #IE1 {
   grid-area: E1;
   width: 70px;
 }
-
 #PE2 {
   grid-area: E2;
 }
-
 #AE3 {
   grid-area: E3;
   color: #ffffff;
 }
-
 #IA1 {
   grid-area: A1;
   width: 70px;
 }
-
 #PA2 {
   grid-area: A2;
 }
-
 #AA3 {
   grid-area: A3;
 }
-
 #IS1 {
   grid-area: S1;
   width: 70px;
 }
-
 #PS2 {
   grid-area: S2;
 }
-
 #AS3 {
   grid-area: S3;
   align-items: center;
 }
-
 #IL1 {
   grid-area: L1;
   text-align: center;
 }
-
 #IL2 {
   grid-area: L2;
   text-align: center;
 }
-
 #CG {
   grid-area: CG;
   color: #ffffff;
   text-decoration: underline 1px #ffffff;
   text-align: center;
 }
-
 .AS3 {
   display: grid;
   margin: 10px 20% 0px 20%;
@@ -421,22 +368,19 @@ footer {
 }
 
 @media screen and (max-width:1000px) {
-  .AS3 {
+  .AS3{
     margin-left: 0px;
     margin-right: 0px;
   }
 }
-
 .b_contact {
   padding: 4px 4px 0px 4px;
   border-radius: 10px;
   border: 2px solid rgb(128, 128, 128);
 }
-
 .b_contact:hover {
   border: 2px solid #ffffff;
 }
-
 #droit {
   font-size: 0.8rem;
   text-align: center;
@@ -473,7 +417,6 @@ footer {
   position: relative;
   transition: all 0.4s ease-in-out;
 }
-
 .cross {
   position: absolute;
   top: 1rem;
@@ -484,22 +427,18 @@ footer {
   transition: 0.3s ease;
   color: #333;
 }
-
 .cross:hover {
   color: rgb(23, 194, 0);
   cursor: pointer;
 }
-
 .conteneur-choice {
   display: flex;
   justify-content: flex-end;
   margin-top: 15px;
   width: 100%;
 }
-
-.choice {
-  margin-top: 20px;
-  text-decoration: none;
+.choice {margin-top: 20px;
+  text-decoration:none;
   background-color: rgb(23, 194, 0);
   color: rgb(255, 255, 255);
   border-radius: 10%;
@@ -514,12 +453,10 @@ footer {
   width: 90px;
   transition: .1s;
 }
-
 .choice:hover {
   background-color: rgb(16, 133, 1);
   cursor: pointer;
 }
-
 .defilement {
   /* max-height: calc(-262px + 67vh); */
   max-height: 60%;
@@ -532,7 +469,7 @@ footer {
 
 .cours {
   padding-left: 0;
-  display: flex;
+  display:flex;
   list-style-type: none;
   align-items: center;
   justify-content: space-evenly;
@@ -544,7 +481,6 @@ footer {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
-
 .cours [type="il"] {
   background-color: #0044ff !important;
 }
@@ -553,77 +489,62 @@ footer {
   .cours {
     height: 100px;
   }
-
   .exposition {
     display: block;
   }
-
   #gauche {
     display: none;
   }
 }
-
 @media screen and (max-width: 690px) {
   footer {
     height: 330px;
   }
 }
-
 @media screen and (max-width: 680px) {
   footer {
     height: 360px;
   }
 }
-
 @media screen and (max-width: 570px) {
   section {
     font-size: 0.95rem;
     margin: 30px 5% 0px 5%;
   }
-
   .cours {
     height: 150px;
   }
-
   .exposition {
     margin-top: 10%;
   }
-
   footer {
     height: 490px;
   }
-
   .bas_de_page {
     grid-template-columns: 1fr 1fr;
     padding-top: 30px;
     grid-template-areas:
-      "E1 A1" "E2 A2" "E3 A3"
-      "S1 L1" "S2 L2" "S3 CG";
+     "E1 A1""E2 A2""E3 A3"
+     "S1 L1""S2 L2""S3 CG";
   }
-
   #IA1 {
     margin: 20px auto 20px auto;
   }
-
   #IS1 {
     margin: 20px auto 20px auto;
   }
-
   #droit {
     margin-top: 20px;
   }
-
   .img_cours {
     width: 30%;
   }
 }
-
 @media screen and (max-width: 672px) {
   .cours {
     height: 170px;
   }
 }
-
 @media screen and (max-width: 560px) {
   .cours {
     height: 180px;
@@ -637,30 +558,24 @@ footer {
   padding: 10px 10px 10px 10px;
   margin-bottom: 37px;
 }
-
 .button-cours:hover {
   background-color: rgb(16, 133, 1);
 }
-
 h4 {
   border-left: 20px;
-  color: #00585e;
+  color:#00585e;
 }
-
 #intro-cours {
-  text-align: center;
+  text-align: center ;
   margin-left: 10%;
   margin-right: 10%;
 }
-
-.img_cours {
+.img_cours{
   min-width: 130px;
 }
-
 .liste_ex {
   margin-bottom: 30px;
 }
-
 .table-exercices {
   border-radius: 4px;
   background-color: rgb(23, 194, 0);
@@ -678,24 +593,19 @@ h4 {
 .b_question {
   height: 180px;
 }
-
 .exercices {
   text-align: center;
   min-height: 50vh;
 }
-
 .b_im_ex {
   margin: 5px;
 }
-
 #correct {
   background-color: green;
 }
-
 #faux {
   background-color: rgb(185, 0, 0);
 }
-
 .solution {
   transition: 0.2s;
   visibility: hidden;
@@ -708,7 +618,6 @@ h4 {
   margin: 0 auto;
 
 }
-
 .show {
   display: block;
   visibility: visible;
@@ -717,7 +626,6 @@ h4 {
   opacity: 1;
   margin-bottom: 20px;
 }
-
 .suivant {
   display: grid;
   border-radius: 4px;
@@ -728,36 +636,19 @@ h4 {
   margin-top: 20px;
   background-color: rgb(23, 194, 0);
 }
-
 .suivant:hover {
   background-color: rgb(16, 133, 1);
 }
-
-#star1:hover {
-  content: url("./asserts/étoile-grise.png");
-}
-
-#star2:hover {
-  content: url("./asserts/étoile-grise.png");
-}
-
-#star3:hover {
-  content: url("./asserts/étoile-grise.png");
-}
-
-#star4:hover {
-  content: url("./asserts/étoile-grise.png");
-}
-
-#star5:hover {
-  content: url("./asserts/étoile-grise.png");
-}
+#star1:hover {content: url("./asserts/étoile-grise.png");}
+#star2:hover {content: url("./asserts/étoile-grise.png");}
+#star3:hover {content: url("./asserts/étoile-grise.png");}
+#star4:hover {content: url("./asserts/étoile-grise.png");}
+#star5:hover {content: url("./asserts/étoile-grise.png");}
 
 #bravo_niv {
   color: #b6a900;
   visibility: hidden;
 }
-
 /* --------------------------- Connexion ---------------------- */
 
 .identification {
@@ -773,20 +664,17 @@ h4 {
   border-radius: 10px;
   padding: 8px;
 }
-
 #username {
   grid-area: user;
   border-radius: 5px;
   margin: 10px;
 
 }
-
 #password {
   grid-area: pass;
   border-radius: 5px;
   margin: 10px;
 }
-
 #sign_in {
   grid-area: sign;
   border-radius: 5px;
@@ -800,12 +688,10 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-
 #sign_in:hover {
   background-color: rgb(16, 133, 1);
   cursor: pointer;
 }
-
 h3.h3_bonjour {
   display: none;
 }
@@ -816,20 +702,18 @@ h3.h3_bonjour {
   margin: 40px auto;
   text-align: center;
   line-height: 40px;
-  color: #1fe41f;
+  color:#1fe41f;
 }
 
 #sign_out {
   display: none;
 }
-
 .la_déconnection {
   border-radius: 5px;
   border: 0;
   margin: 10px;
   margin: auto auto;
-  background-color: rgb(23, 194, 0);
-  ;
+  background-color: rgb(23, 194, 0);;
   color: rgb(255, 255, 255);
   height: 40px;
   width: 120px;
@@ -837,12 +721,10 @@ h3.h3_bonjour {
   align-items: center;
   justify-content: center;
 }
-
 .la_déconnection:hover {
   cursor: pointer;
   background-color: rgb(16, 133, 1);
 }
-
 /* ---------------------- Dons ---------------- */
 .payer {
   margin: auto auto;
@@ -855,7 +737,7 @@ h3.h3_bonjour {
   grid-template-areas: "num" "mon" "img" "val";
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.863);
   border-radius: 10px;
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 0 10px ;
 }
 
 #numéro_carte {
@@ -863,7 +745,6 @@ h3.h3_bonjour {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
 #montant {
   grid-area: "mon";
   border-radius: 5px;
@@ -874,7 +755,6 @@ h3.h3_bonjour {
   grid-area: "img";
   max-width: 200px;
 }
-
 #payons {
   grid-area: "val";
   border-radius: 5px;
@@ -888,7 +768,6 @@ h3.h3_bonjour {
   align-items: center;
   justify-content: center;
 }
-
 #payons:hover {
   background-color: rgb(16, 133, 1);
   cursor: pointer;
@@ -906,7 +785,6 @@ h3.h3_bonjour {
 #img1_journal {
   max-height: 500px;
 }
-
 /* ----------------- Autres ------------------- */
 .delay {
   transition-delay: 3s;
@@ -925,63 +803,53 @@ h3.h3_bonjour {
   0% {
     background: #00c3ff;
   }
-
   20% {
-    background: #00646c;
+      background: #00646c;
   }
-
   50% {
     background: #0044ff;
   }
-
   60% {
     background: #c300ff;
   }
-
   80% {
     background: #ff0000;
   }
-
   100% {
     background: #ff7300;
   }
 }
 
 
-a#cRetour {
+a#cRetour{
   bottom: 20px;
-  border-radius: 3px;
-  padding: 10px;
-  text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.25);
-  position: fixed;
-  right: 20px;
-  opacity: 1;
-  z-index: 20;
-  transition: all ease-in 0.2s;
+  border-radius:3px;
+  padding:10px;
+  text-align:center;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.25);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:20;
+  transition:all ease-in 0.2s;
   visibility: hidden;
   text-decoration: none;
 }
-
-a#cRetour:before {
-  content: "\25b2";
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
 }
-
-a#cRetour:hover {
-  background: rgba(0, 0, 0, 1);
-  transition: all ease-in 0.2s;
-}
-
-a#cRetour.cInvisible {
+a#cRetour.cInvisible{
   visibility: hidden;
-  opacity: 0;
-  transition: all ease-in 0.5s;
+  opacity:0;
+  transition:all ease-in 0.5s;
 }
 
-a#cRetour.cVisible {
+a#cRetour.cVisible{
   visibility: visible;
-  opacity: 1;
+  opacity:1;
 }
 
 .boutton_retour {

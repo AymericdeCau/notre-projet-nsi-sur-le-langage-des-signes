@@ -17,11 +17,11 @@ function findGetParameter(parameterName) {
 var nom = findGetParameter("name");
 var cookies = findGetParameter("cookies");
 
-console.log(nom, cookies)
+console.log(nom,cookies)
 
 if (nom != "aucun") {
     var a = document.querySelectorAll("a:not(.non_lien)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         a[i].href += "?name=" + nom;
     }
     document.getElementById("b_connexion").textContent = nom;
@@ -30,7 +30,7 @@ if (nom != "aucun") {
 
 if (cookies != "aucun") {
     var a = document.querySelectorAll("a:not(.non_lien)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         if (nom != "aucun") {
             a[i].href += "&cookies=" + cookies;
         } else {
@@ -46,16 +46,15 @@ function delay() {
 
 function changementUrl(choix) {
     var a = document.querySelectorAll("a:not(.non_lien)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         if (nom != "aucun") {
             a[i].href += "&cookies=" + choix;
-        } else {
-            a[i].href += "?cookies=" + choix;
-        }
-    }
-}
+       } else {
+           a[i].href += "?cookies=" + choix;
+       }
+}}
 
-function popupVisible() {
+function popupVisible () {
     document.querySelector("#popup").classList.add("popup");
     document.querySelector(".cross").addEventListener("click", () => {
         document.querySelector("#popup").classList.remove("popup");
@@ -81,22 +80,16 @@ function sommaireOuverture() {
     const choix = document.querySelector(".sommaire ul");
 
     if (choix.style.display != "block") {
-        flèche_sommaire.src = "./asserts/flèche-développer.png";
-        flèche_sommaire.title = "réduire le sommaire"
-        choix.style.display = "block";
-        sommaire.style.maxWidth = "150px";
-        sommaire.style.opacity = "1";
+    flèche_sommaire.src = "./asserts/flèche-développer.png";
+    flèche_sommaire.title = "réduire le sommaire"
+    choix.style.display = "block";
+    sommaire.style.maxWidth = "150px";
+    sommaire.style.opacity = "1";
     } else {
-        flèche_sommaire.src = "./asserts/flèche-avant.png";
-        flèche_sommaire.title = "développer le sommaire"
-        choix.style.display = "none";
-        sommaire.style.maxWidth = "125px";
-        sommaire.style.opacity = "0.6";
+    flèche_sommaire.src = "./asserts/flèche-avant.png";
+    flèche_sommaire.title = "développer le sommaire"
+    choix.style.display = "none";
+    sommaire.style.maxWidth = "125px";
+    sommaire.style.opacity = "0.6";
     }
 }
-
-
-
-
-
-

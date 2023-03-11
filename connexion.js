@@ -31,7 +31,7 @@ console.log(nom, cookies)
 
 if (nom != "aucun") {
     var a = document.querySelectorAll("a:not(.b_sommaire)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         a[i].href += "?name=" + nom;
     }
     document.getElementById("b_connexion").textContent = nom;
@@ -40,12 +40,12 @@ if (nom != "aucun") {
 
 if (cookies != "aucun") {
     var a = document.querySelectorAll("a:not(.non_lien)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         if (nom != "aucun") {
             a[i].href += "&cookies=" + cookies;
-        } else {
-            a[i].href += "?cookies=" + cookies;
-        }
+       } else {
+           a[i].href += "?cookies=" + cookies;
+       }
     }
 }
 
@@ -53,18 +53,18 @@ if (cookies != "aucun") {
 b_connection.addEventListener("click", () => {
     var le_nom = document.getElementById("username").value;
     var a = document.querySelectorAll("a:not(.b_sommaire)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         if (nom != "aucun" || cookies != "aucun") {
             var items = window.location.search.substring(1);
-            console.log(a[i].href, "   ", le_nom, "   ", cookies, "   ", items);
+            console.log(a[i].href,"   ",  le_nom,"   ",  cookies, "   ", items);
             var liste = a[i].href.split("?");
             console.log("la liste : ", liste);
             a[i].href = liste[0];
-            console.log(a[i].href, "   ", le_nom, "   ", cookies);
+            console.log(a[i].href,"   ",  le_nom,"   ",  cookies);
         }
-        console.log(a[i].href, "   ", le_nom, "   ", cookies, "2");
+        console.log(a[i].href,"   ", le_nom,"   ",  cookies, "2");
         a[i].href += "?name=" + le_nom + "&cookies=" + cookies;
-        console.log(a[i].href, "   ", le_nom, "   ", cookies, "2");
+        console.log(a[i].href,"   ",  le_nom,"   ",  cookies, "2");
     }
     document.getElementById("b_connexion").textContent = le_nom;
     document.getElementById("b_connexion").title = le_nom;
@@ -79,19 +79,18 @@ b_connection.addEventListener("click", () => {
 
 déconnection.addEventListener("click", () => {
     var a = document.querySelectorAll("a:not(.b_sommaire)");
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length; i++){
         var liste = a[i].href.split("?");
         if (cookies != "aucun") {
             a[i].href = liste[0] + "?cookies=" + cookies;
         } else {
             a[i].href = liste[0];
         }
-        document.querySelector("#b_connexion").textContent = "Connexion";
-        document.querySelector("#b_connexion").title = "Connexion";
+    document.querySelector("#b_connexion").textContent = "Connexion";
+    document.querySelector("#b_connexion").title = "Connexion";
 
-        indentification.style.display = "grid";
-        bonjour.classList.remove("le_bonjour");
-        déconnection.classList.remove("la_déconnection");
-    }
-})
+    indentification.style.display = "grid";
+    bonjour.classList.remove("le_bonjour");
+    déconnection.classList.remove("la_déconnection");
+}})
 
