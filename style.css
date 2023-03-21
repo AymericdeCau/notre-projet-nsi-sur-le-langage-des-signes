@@ -38,7 +38,7 @@ a {
   font-size: 20px;
   height: 70px;
   display: flex;
-  background-color: #00646c;
+  background-color: #031163;
   transition: 0.3s;
   top: 0;
   left: 0;
@@ -60,7 +60,7 @@ a {
 
 .logo:hover {
   transition: 0.1s;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.591);
+  box-shadow: 2px 2px 5px 2px #5ed7fc59;
 }
 
 .bouton {
@@ -69,34 +69,45 @@ a {
   font-size: 1.7rem;
   align-items: center;
   justify-content: center;
-  color: #1fe41f;
+  color: #1fbfb8;
 }
 
 .bouton:hover {
-  color: #49ff25;
-  text-decoration: underline 1px solid #49ff25;
+  color: #fcd75e;
+  text-decoration: underline 1px solid #fcd75e;
 }
 
 #connexion a {
   margin: auto auto;
   font-size: 1.5rem;
-  background-color: rgb(23, 194, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgba(23, 194, 0, 0);
+  color: #1fbfb8;
   height: 40px;
   padding: 0px 12px 0px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  border: 2px solid #1fbfb8;
 }
 
 #connexion a:hover {
-  background-color: #43d81e;
+  color: #fcd75e;
+  border: 2px solid#fcd75e;
+  background-color: #1ebcd823;
 }
 
 #apprendre {
   display: none;
 }
+
+#cours:hover .ruban_déroule  {
+  visibility: visible;
+}
+#exercice:hover .ruban_déroule  {
+  visibility: visible;
+}
+
 
 .ruban_déroule {
   visibility: hidden;
@@ -109,42 +120,43 @@ a {
 }
 
 .liste_déroule li {
-  max-width: 150px;
+  max-width: 140%;
   padding-bottom: 10px;
   padding-top: 10px;
-  background-color: #00646c;
+  margin-left: -60px;
+  background-color: #031163;
 }
-
+/* .liste_déroule li:hover {
+  background-color: #ffffff;
+  color: #031163;
+  text-decoration: underline 1px solid #031163;
+} */
 .menu_déroule {
   position: relative;
   margin: 0 10px 10px 10px;
   padding: 8px;
-  color: #1fe41f;
+  color: #1fbfb8;
   font-size: 20px;
 }
 
 .menu_déroule:hover {
-  color: #49ff25;
-  text-decoration: underline 1px solid #49ff25;
+  color: #fcd75e;
+  text-decoration: underline 1px solid #fcd75e;
 }
 
 @media screen and (max-width: 570px) {
   #accueil {
     display: none;
   }
-
   #apprendre {
     display: inline-block;
   }
-
   #cours {
     display: none;
   }
-
   #exercice {
     display: none;
   }
-
   #apprendre:hover .ruban_déroule {
     visibility: visible;
   }
@@ -170,10 +182,10 @@ a {
 } */
 
 .exposition {
-  background-color: rgb(255, 255, 255);
+  background-color: #c2e3f3;
   margin-top: 30%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 10% 80% 10%;
   grid-template-areas: "ac_1 ac_2 ac_3";
 }
 
@@ -215,7 +227,10 @@ a {
 
 /* Le titre */
 h1 {
+  color: #031163;
   margin: auto;
+  font-size: 3rem;
+  font-weight: 800;
   padding-top: 50px;
   width: 60%;
   text-align: center;
@@ -234,6 +249,7 @@ h1 {
 
 /* Les différents paragraphes */
 section {
+  background-color: white;
   margin: 30px 10% 0px 10%;
   padding: 10px 20px;
   border-radius: 15px;
@@ -283,6 +299,7 @@ section {
 /* ---------------- Sommaire --------------------*/
 
 .sommaire {
+  background-color: white;
   opacity: 0.6;
   margin: 50px auto 0px auto;
   padding: 15px 5px;
@@ -514,7 +531,7 @@ footer {
 .choice {
   margin-top: 20px;
   text-decoration: none;
-  background-color: rgb(23, 194, 0);
+  background-color: #031163;
   color: rgb(255, 255, 255);
   border-radius: 10%;
   height: 40px;
@@ -530,7 +547,7 @@ footer {
 }
 
 .choice:hover {
-  background-color: rgb(16, 133, 1);
+  background-color: #1978a5;
   cursor: pointer;
 }
 
@@ -594,7 +611,12 @@ footer {
     font-size: 0.95rem;
     margin: 30px 5% 0px 5%;
   }
-
+  .bouton {
+    font-size: 1.4rem;
+  }
+  #connexion a {
+    font-size: 1.4rem;
+  }
   .cours {
     height: 150px;
   }
@@ -646,14 +668,14 @@ footer {
 
 .button-cours {
   border-radius: 4px;
-  background-color: rgb(23, 194, 0);
+  background-color: #031163;
   color: white;
   padding: 10px 10px 10px 10px;
   margin-bottom: 37px;
 }
 
 .button-cours:hover {
-  background-color: rgb(16, 133, 1);
+  background-color: #1978a5;
 }
 
 h4 {
